@@ -13,8 +13,8 @@
 Write-Progress -Activity "Enviado Notificação" -Status "Obtendo Informações" -PercentComplete 25 -Id 1 
 $MDTServerName = 'LIWER-MDT01'
 $MailSubject = "[MDT] Notificação do processo OS Deployment - PC $env:COMPUTERNAME"
-$botid = "5338347901:ASTTGyFXEPFuyvWf1kjKI3EHE29o1gtU2oc"
-$destination = "-259256789"
+$botid = "seu-codigo-bot"
+$destination = "-0000000"
 
 Function Get-MDTOData{
     <# 
