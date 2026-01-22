@@ -23,11 +23,15 @@ O bot envia uma mensagem formatada assim para o seu grupo:
 > 📢 **MDT Deployment Finalizado**
 >
 > 🖥️ **Host:** DESKTOP-LAB01
+> 
 > 📦 **Modelo:** Dell Latitude 5420
+> 
 > 🏷️ **Tag:** 8X99A12
+> 
 > 👤 **Tech:** Wesley Wilson
 >
 > ⏱️ **Duração:** 00h 45m
+> 
 > 📅 **Fim:** 22/01/2026 14:30
 >
 > ⚠️ **Alertas:** 0
@@ -43,7 +47,7 @@ O bot envia uma mensagem formatada assim para o seu grupo:
 * Servidor MDT com Monitor Service habilitado.
 
 ### 2. Instalação do Script
-Salve o arquivo `Z-NotifyTelegram.ps1` na pasta de scripts do seu Deployment Share:
+Salve o arquivo `MDTSendNotification.ps1` na pasta de scripts do seu Deployment Share:
 `\\SeuServidor\DeploymentShare$\Scripts\`
 
 ### 3. Configuração da Task Sequence
@@ -51,7 +55,7 @@ No console do MDT:
 1.  Abra sua Task Sequence.
 2.  Vá até a fase **State Restore** -> **Custom Tasks** (ou no final da lista).
 3.  Adicione um passo do tipo **Run PowerShell Script**.
-4.  **Command line:** `%ScriptRoot%\Z-NotifyTelegram.ps1`
+4.  **Command line:** `%ScriptRoot%\MDTSendNotification.ps1`
 
 ### 4. Configuração Segura (Recomendado)
 Para não deixar o Token do seu bot exposto no código, adicione as variáveis no seu `CustomSettings.ini` (na aba Rules):
