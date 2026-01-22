@@ -17,11 +17,11 @@ Script de automação para enviar notificações em tempo real sobre o status de
 
 ### Instalação no MDT
 
-1.  baixe o script `Z-NotifyTelegram.ps1` para a pasta `Scripts` do seu Deployment Share.
+1.  baixe o script `MDTSendNotification.ps1` para a pasta `Scripts` do seu Deployment Share.
 2.  Na Task Sequence, adicione um passo "Run PowerShell Script":
-    * **Command:** `%ScriptRoot%\Z-NotifyTelegram.ps1 -Status 'Start'`
+    * **Command:** `%ScriptRoot%\MDTSendNotification.ps1`
 
 ### Exemplo de Uso (Parâmetros)
 
 ```powershell
-.\Z-NotifyTelegram.ps1 -Token "12345:ABCDE..." -ChatID "-987654321" -Message "Deployment Finalizado com Sucesso!"
+.\MDTSendNotification.ps1 -Token "12345:ABCDE..." -ChatID "-987654321" -Message "Deployment Finalizado com Sucesso!"
