@@ -1,14 +1,14 @@
-# MDT Telegram Notification 🤖
+# MDT Telegram Notification
 
 Script de automação para enviar notificações em tempo real sobre o status de implantação de Sistemas Operacionais (OSD) via Microsoft Deployment Toolkit (MDT).
 
-## 🎯 Funcionalidades
+## Funcionalidades
 
 * Notifica Início, Fim e Falha do deployment.
 * Envia nome da máquina, Modelo, IP e Tempo decorrido.
 * Integração direta na Task Sequence do MDT.
 
-## ⚙️ Configuração
+## Configuração
 
 ### Pré-requisitos
 * Token do Bot Telegram (via @BotFather).
